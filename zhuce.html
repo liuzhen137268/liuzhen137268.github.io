@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册</title>
+    <link rel="stylesheet" href="style copy.css">
+</head>
+<body>
+     <div class="container">
+    <div class="header">
+        <h1>注册</h1>
+    </div>
+    <div class="main">
+        <form onSubmit="checkLogin(event)">
+            <span>
+                账号 <input type="text" id="name" placeholder="请输入账号" required><br>
+                密码 <input type="text" id="password" placeholder="请输入密码" required><br>
+                确认 <input type="text" id="repassword" placeholder="重新输入密码" required>  
+            </span>
+            <button type="submit">注册</button>
+            
+        </form>
+    </div>
+
+  </div> 
+  <script>
+    function checkLogin(event){
+        event.preventDefault()
+      
+       
+            window.location.href = 'index.html'
+        
+
+    }
+  </script>
+</body>
+</html>
